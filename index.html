@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tojal | Web Developer </title>
+    <link rel="shortcut icon" href="assets\favicon_T.ico"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"> 
+    <script defer src="main.js"> </script>
+</head>
+
+<body>
+    <header>
+            <nav>
+                <div class="nav-bar">
+                    <div><a href="#home"><img src="assets\projeto_logo2.png" alt="logo-Tojal" class="logo"></a></div>
+                        <!-- Icons by Kiranshastry @ https://www.flaticon.com/packs/coding-18-->
+                        <div class="icons-spacing" id="nav-links">
+                            <a href="#home"><img src="assets\icon-home.png" alt="Home" class="nav-bar-elements" /></a>
+                            <a href="#about"><img src="assets\icon-user.png" alt="Developer" class="nav-bar-elements"/></a>
+                            <a href="#projects"><img src="assets\icon-rocket.png" alt="Portfolio" class="nav-bar-elements"/></a>
+                            <a href="#contact"><img src="assets\icon-contact.png" alt="Contact" class="nav-bar-elements"/></a>
+                        </div>
+                        <div class="burger" onclick="barsToCross(this), showIcons(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                </div>
+            </nav>
+    </header>
+
+    <main>
+        <!--HOME SECTION-->
+        <section class="flex home-section" id="home">
+            <div class="home-text">
+                <div>Hi, I'm <span class="gray-text">António</span>,</div>
+                <div>also known as <span class="gray-text">Tojal</span>.</div>
+                <div>I'm a mission-driven</div>
+                <div><span class="red-text">Web Developer</span>.</div>
+                <a href="#contact">
+                    <button type="button" class="button"> <span class="gray-text">Let's talk</span> </button>
+                </a>
+            </div>
+        </section>
+       
+        <!--ABOUT SECTION-->
+        <section class="about-section" id="about">
+                <h1 class="section-text">ABOUT</h1>
+                <div>
+                    <img src="assets\my-photo.jpg" alt="My Photo" class="my-photo"/>
+                </div>  
+                <div class="about-text">
+                    <div class="gray-text justify">I'm a Postgraduate-level educated professional, multilingual, with a set of skills applicable to different industries.
+                            I have worked in Portugal and in three other countries, both in operational and leadership positions.
+                            Please check my <a href="https://www.linkedin.com/in/antoniopedrosilvarocha/" target="_blank" class="gray-text linkedin-not-active"><span class="gray-text linkedin">Linked</span>in</a> for more info.
+                    </div>
+                    <br>
+                    <div class="gray-text justify">In 2020, after spending seven years working in tourism and hospitality, from which three were dedicated to building my own business, I decided to pivot and become a Developer by enrolling in a full-stack programming degree.</div>
+                    <br>
+                    <div class="gray-text justify">I wish to collaborate with ambitious projects that work towards the achievement of the <a class="orange-text" href="https://sdgs.un.org/goals" target="_blank">17 Sustainable Development Goals</a>, specifically the ones that directly impact climate change.</div>
+                    <br>
+                    <div class="gray-text justify">Click <a class="orange-text" href="https://youtu.be/8Sl28fkrozE" target="_blank">here</a> to learn why I care and why you should too.</div>
+                    <br>
+                    <br>
+                    <div>
+                        <div><i class="flex-column-end gray-text">There are no passengers on spaceship earth.<a class="orange-text" href="https://pl.tedcdn.com/countdown/downloads/social/Countdown-Social-28.png" target="_blank"> We are all crew.</a></i></div>
+                        <div class="flex-column-end gray-text">Marshall McLuhan</div>
+                    </div>
+                </div>
+        </section>
+        
+        <!--PROJECT SECTION-->
+        <section class="projects-section" id="projects">
+            
+            <h1 class="section-text">PROJECTS</h1>
+            
+            <div class = "dropdown">
+                <select>
+                    <option onclick="NewtoOld(this)">Newer to Older</option>
+                    <option onclick="OldtoNew(this)">Older to Newer</option>
+                </select>
+            </div>
+            
+            <div class="project-grid grid-area-newToOld" id="project-grid">
+                <div class="grid-item backg-img" onclick="projDetails(this)">
+                    <h3 class="proj-title">Scrath</h3>
+                    <p class="proj-text">A simple Scratch project, used to learn basic programming. The topic was the Covid-19 pandemic.</p>
+                    <div class="proj-icons-div">
+                        <a href="https://scratch.mit.edu/projects/384107618/" target="_blank"><img src="assets\link_w.png" alt="Link" class="proj-icons"/></a>
+                        <a href="https://scratch.mit.edu/projects/384107618/editor/" target="_blank"><img src="assets\link_w.png" alt="Link" class="proj-icons"/></a>
+                    </div>
+                </div>
+                <div class="grid-item backg-img" onclick="projDetails(this)">
+                    <h3 class="proj-title">Console App</h3>
+                    <p class="proj-text">Basic console app, made in with C# using the .Net framework, that simulates the Euro Millions contest.</p>
+                    <div class="proj-icons-div">
+                        <a href="https://ps.w.org/coming-soon-wp/assets/icon-256x256.png?rev=2285512" target="_blank"><img src="assets\jpg_w.png" alt="Image-Icon" class="proj-icons"/></a>
+                        <a href="https://github.com/T0jal" target="_blank"><img src="assets\github_w.png" alt="GitHub-Icon" class="proj-icons"/></a>
+                    </div>
+                </div>
+                <div class="grid-item backg-img" onclick="projDetails(this)">
+                    <h3 class="proj-title">Console App</h3>
+                    <p class="proj-text">Basic console app, made in with C# using the .Net framework, that simulates an IPv4 calculator.</p>
+                    <div class="proj-icons-div">
+                        <a href="https://ps.w.org/coming-soon-wp/assets/icon-256x256.png?rev=2285512" target="_blank"><img src="assets\jpg_w.png" alt="Image-Icon" class="proj-icons"/></a>
+                        <a href="https://github.com/T0jal" target="_blank"><img src="assets\github_w.png" alt="GitHub-Icon" class="proj-icons"/></a>
+                    </div>
+                </div>
+                <div class="grid-item backg-img" onclick="projDetails(this)">
+                    <h3 class="proj-title">Website</h3>
+                    <p class="proj-text">Website structure made with PHP, HTML and CSS using the Laravel Framework.</p>
+                    <div class="proj-icons-div">
+                        <a href="https://ps.w.org/coming-soon-wp/assets/icon-256x256.png?rev=2285512" target="_blank"><img src="assets\jpg_w.png" alt="Image-Icon" class="proj-icons"/></a>
+                        <a href="https://github.com/T0jal" target="_blank"><img src="assets\github_w.png" alt="GitHub-Icon" class="proj-icons"/></a>
+                    </div>
+                </div>
+                <div class="grid-item backg-img" onclick="projDetails(this)">
+                    <h3 class="proj-title">Phone App Design</h3>
+                    <p class="proj-text">Design of a Music Phone App focused on the Pimba Style using Adobe Xd and Photoshop.</p>
+                    <div class="proj-icons-div">
+                        <a href="https://youtu.be/H0rqX7jzwGs" target="_blank"><img src="assets\youtube_w.png" alt="Youtube-icon" class="proj-icons"/></a>
+                    </div>
+                </div>
+                <div class="grid-item backg-img" onclick="projDetails(this)">
+                    <h3 class="proj-title">Website</h3>
+                    <p class="proj-text">Full website made with HTML, CSS & JS for a Portuguese producer of vegan food products. Coming soon.</p>
+                    <div class="proj-icons-div">
+                        <a href="https://pl.tedcdn.com/countdown/downloads/social/20200618_Countdown_Posters-09.png" target="_blank"><img src="assets\jpg_w.png" alt="Image-Icon" class="proj-icons"/></a>
+                        <a href="https://youtu.be/nUnJQWO4YJY" target="_blank"><img src="assets\youtube_w.png" alt="Youtube-icon" class="proj-icons"/></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--CONTACT SECTION-->
+        <section class="contacts-section" id="contact">
+            <h1 class="section-text">GET IN TOUCH</h1>
+            <div class="form-section">
+                <form class="form flex" id="form" method="get" action="#footer">
+                    <input id="input_fname" class="input" type="text" name="input_fname" placeholder="First Name *" required>
+                    <input id="input_lname" class="input" type="text" name="input_lname" placeholder="Last Name *" required>
+                    <input id="input_email" class="input" type="email" name="input_email" placeholder="E-mail *" required>
+                    <textarea id="input_message" class="input input-message" name="input_message" placeholder="Your Message"></textarea>
+                    <input type="submit" class="form-button" value="Send"></input>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <nav>
+            <div class="foot-bar" id=footer>
+                    <p class="footer-text"> © 2020 Tojal. All Rights Reserved.</p>
+                    <div class="icons-spacing">
+                        <a href="https://www.linkedin.com/in/antoniopedrosilvarocha/" target="_blank"><img src="assets\icon-linkedin.png" alt="LinkedIn-Icon" class="footer-elements"/></a>
+                        <a href="https://github.com/T0jal" target="_blank"><img src="assets\github_w.png" alt="GitHub-Icon" class="footer-elements"/></a>
+                    </div>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>
