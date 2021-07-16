@@ -1,7 +1,7 @@
 
 # My First Portfolio Web Page
 
-On this project I created a webpage to serve as a portfolio. As it was my first attemp at this I used only HTML, CSS & Vanilla JavaScript.
+On this project, I created a webpage to serve as a portfolio. As it was my first attempt at this I used only HTML, CSS & Vanilla JavaScript.
 
 Main points of interest:
 
@@ -13,7 +13,7 @@ Main points of interest:
 
 ## Demo
 
-The webpage can be seen live at www.tojal.pt (today, 16.07.2021. It will most likely be changed overtime.)
+The webpage can be seen live at www.tojal.pt (today, 16.07.2021. It will most likely be changed over time.)
   
 
 ## Authors
